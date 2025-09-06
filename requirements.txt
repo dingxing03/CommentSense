@@ -1,0 +1,12 @@
+pandas
+openai
+transformers
+torch
+numpy
+langid        
+langdetect       
+googletrans
+deep-translator
+openai 
+contractions
+nltk
