@@ -17,7 +17,7 @@ export const VideoSelector: React.FC<VideoSelectorProps> = ({
   const handleFilterTypeChange = (type: 'all' | 'timeline' | 'video') => {
     let defaultValue = '';
     if (type === 'timeline') defaultValue = 'last30';
-    if (type === 'video') defaultValue = videos[1]?.id || 'all';
+    if (type === 'video') defaultValue = '';
     
     onFilterChange({ type, value: defaultValue });
   };
@@ -34,8 +34,13 @@ export const VideoSelector: React.FC<VideoSelectorProps> = ({
         const timelineOption = timelineOptions.find(t => t.id === selectedFilter.value);
         return timelineOption?.description || 'Timeline-based filtering';
       case 'video':
+        if (!selectedFilter.value.trim()) {
+          return 'Enter a video ID to filter data for that specific video';
+        }
         const video = videos.find(v => v.id === selectedFilter.value);
-        return video?.publishDate ? `Published: ${new Date(video.publishDate).toLocaleDateString()}` : '';
+        return video?.publishDate 
+          ? `Video found - Published: ${new Date(video.publishDate).toLocaleDateString()}` 
+          : `Filtering by Video ID: ${selectedFilter.value}`;
       default:
         return '';
     }
@@ -117,26 +122,15 @@ export const VideoSelector: React.FC<VideoSelectorProps> = ({
         <div>
           <div className="flex items-center gap-3 mb-2">
             <Play className="text-green-600" size={18} />
-            <span className="text-sm font-medium text-gray-700">Select Video:</span>
+            <span className="text-sm font-medium text-gray-700">Enter Video ID:</span>
           </div>
-          <div className="relative">
-            <select
-              value={selectedFilter.value}
-              onChange={(e) => handleFilterValueChange(e.target.value)}
-              className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-10 text-sm font-medium text-gray-700 hover:border-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors min-w-64"
-            >
-              {videos.slice(1).map((video) => (
-                <option key={video.id} value={video.id}>
-                  {video.title}
-                  {video.duration && ` (${video.duration})`}
-                </option>
-              ))}
-            </select>
-            <ChevronDown 
-              className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none" 
-              size={16} 
-            />
-          </div>
+          <input
+            type="text"
+            value={selectedFilter.value}
+            onChange={(e) => handleFilterValueChange(e.target.value)}
+            placeholder="Enter video ID (e.g., ABC123, DEF456...)"
+            className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm font-medium text-gray-700 hover:border-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors min-w-64 w-full max-w-sm"
+          />
         </div>
       )}
 
