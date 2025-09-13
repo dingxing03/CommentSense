@@ -3,7 +3,6 @@ export interface VideoData {
   title: string;
   thumbnail?: string;
   publishDate: string;
-  duration: string;
 }
 
 export interface KPIData {
