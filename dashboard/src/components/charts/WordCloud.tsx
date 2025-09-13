@@ -11,8 +11,8 @@ export const WordCloud: React.FC<WordCloudProps> = ({ words }) => {
     const colors: Record<string, string> = {
       skincare: '#10B981',
       makeup: '#8B5CF6',
-      fragrance: '#F59E0B',
-      general: '#3B82F6'
+      hair: '#3B82F6',
+      other: '#3B82F6'
     };
     return colors[category] || '#6B7280';
   };

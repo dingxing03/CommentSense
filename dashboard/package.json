@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "setup": "node setup.js",
+    "dev-with-setup": "npm run setup && npm run dev"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",

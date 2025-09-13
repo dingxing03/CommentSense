@@ -10,32 +10,27 @@ export const mockVideos: VideoData[] = [
   {
     id: 'all',
     title: 'All Videos',
-    publishDate: '',
-    duration: ''
+    publishDate: ''
   },
   {
     id: 'video-001',
     title: 'Summer Skincare Routine 2024',
-    publishDate: '2024-01-15',
-    duration: '12:34'
+    publishDate: '2024-01-15'
   },
   {
     id: 'video-002',
     title: 'Everyday Makeup Tutorial',
-    publishDate: '2024-01-10',
-    duration: '8:45'
+    publishDate: '2024-01-10'
   },
   {
     id: 'video-003',
     title: 'Fragrance Collection Review',
-    publishDate: '2024-01-05',
-    duration: '15:22'
+    publishDate: '2024-01-05'
   },
   {
     id: 'video-004',
     title: 'Hair Care Tips for Winter',
-    publishDate: '2024-01-01',
-    duration: '10:18'
+    publishDate: '2024-01-01'
   }
 ];
 

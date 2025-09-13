@@ -128,7 +128,6 @@ export const VideoSelector: React.FC<VideoSelectorProps> = ({
               {videos.slice(1).map((video) => (
                 <option key={video.id} value={video.id}>
                   {video.title}
-                  {video.duration && ` (${video.duration})`}
                 </option>
               ))}
             </select>
