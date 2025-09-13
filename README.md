@@ -114,27 +114,33 @@ We designed an **end-to-end pipeline** consisting of five main modules:
 <p align="center">
   <img src="images/home_kpi.png" alt="Dashboard Homepage" width="600">
 </p>
-**Figure 2:** Homepage of Dashboard displaying Quality Comments Ratio  
+
+<p align="center"><b>Figure 1:</b> Homepage of Dashboard displaying Quality Comments Ratio  </p>
 
 <p align="center">
   <img src="images/home_cmtQuality.png" alt="Dashboard Homepage" width="600">
 </p>
-**Figure 3:** Homepage of Dashboard displaying Relevant Comment Score & Top Quality Comments  
+
+<p align="center"><b>Figure 2:</b> Homepage of Dashboard displaying Relevant Comment Score & Top Quality Comments</p>
 
 <p align="center">
   <img src="images/home_sentiment.png" alt="Dashboard Homepage" width="600">
 </p>
-**Figure 4:** Homepage of Dashboard displaying Sentiment & Category Analysis  
+
+<p align="center"><b>Figure 3:</b> Homepage of Dashboard displaying Sentiment & Category Analysis</p>
 
 <p align="center">
   <img src="images/home_spam.png" alt="Dashboard Homepage" width="600">
 </p>
-**Figure 5:** Homepage of Dashboard displaying Spam Filter  
+
+<p align="center"><b>Figure 4:</b> Homepage of Dashboard displaying Spam Filter  </p>
 
 <p align="center">
   <img src="images/home_roi.png" alt="Dashboard Homepage" width="600">
 </p>
-**Figure 6:** Homepage of Dashboard displaying Impact and ROI  
+
+<p align="center"><b>Figure 5:</b> Homepage of Dashboard displaying Impact and ROI</p>
+
 
 ---
 
