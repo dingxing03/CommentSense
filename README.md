@@ -47,7 +47,8 @@ We designed an **end-to-end pipeline** consisting of five main modules:
 ## 🛠 Development Tools  
 - **Translation**: `langdetect` + `deep-translator`  
 - **Spam Detection**: `madhurjindal/autonlp-Gibberish-Detector-492513457` (Pre-trained models from Hugging Face)
-- **Categorization**: `facebook/bart-large-mnli` (Zero-Shot Classification)  - **Sentiment Analysis**: DistilBERT + Graph Neural Network Refiner (GoEmotions dataset)  
+- **Categorization**: `facebook/bart-large-mnli` (Zero-Shot Classification)  
+- **Sentiment Analysis**: DistilBERT + Graph Neural Network Refiner (GoEmotions dataset)  
 - **Environment**: Python, Jupyter, Hugging Face Transformers  
 
 ---
@@ -81,21 +82,38 @@ We designed an **end-to-end pipeline** consisting of five main modules:
 
 ---
 
-## 📊 Results  
-- **Translation**: Preserved meaning in rojak/mixed-language text.  
-- **Spam Detection**: Successfully filtered noise, and irrelevant content.  
-- **Categorization**: Grouped comments into clear product categories.  
-- **Sentiment Analysis**: Achieved **90.32% accuracy** on GoEmotions.  
-- **Quality Score**: Delivered a meaningful metric for engagement quality.  
-
----
-
 ## 🖥 Prototype  
 - Interactive **dashboard** for:  
   - Engagement quality insights  
   - Campaign ROI tracking  
   - Category-level sentiment analysis  
   - Early detection of negative buzz  
+- **Filtering by Video ID & Time Period**: Users can select specific video or time period to view detailed comment analysis.  
+
+<p align="center">
+  <img src="images/home_kpi.png" alt="Dashboard Homepage" width="600">
+</p>
+**Figure 1:**: Homepage of Dashboard that displayed Quality Comments Ratio
+
+<p align="center">
+  <img src="images/home_cmtQuality.png" alt="Dashboard Homepage" width="600">
+</p>
+**Figure 2:**: Homepage of Dashboard that displayed Relevant Comment Score & Top Quality Comments
+
+<p align="center">
+  <img src="images/home_sentiment.png" alt="Dashboard Homepage" width="600">
+</p>
+**Figure 3:**: Homepage of Dashboard that displayed Sentiment & Category Analysis
+
+<p align="center">
+  <img src="images/home_spam.png" alt="Dashboard Homepage" width="600">
+</p>
+**Figure 4:**: Homepage of Dashboard that displayed Spam Filter
+
+<p align="center">
+  <img src="images/home_roi.png" alt="Dashboard Homepage" width="600">
+</p>
+**Figure 5:**: Homepage of Dashboard that displayed Impact and ROI
 
 ---
 
