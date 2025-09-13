@@ -83,6 +83,26 @@ We designed an **end-to-end pipeline** consisting of five main modules:
 
 ---
 
+---
+
+## System Workflow
+
+- Input Text: Collect raw comments.
+- Language Detection: Identify language of text.
+- Translation: Convert non-English text to English.
+- Spam Detection:
+    - Spam → Assign EfficiencyScore = 0 (filtered out).
+    - Non-spam → Proceed to analysis.
+- Text Preprocessing: Clean and standardize text.
+- Sentiment Analysis: Determine emotional tone.
+- Categorization: Classify into relevant categories.
+
+<p align="center">
+  <img src="images/workflow.png" alt="System Workflow" width="600">
+</p>
+
+---
+
 ## 🖥 Prototype  
 - Interactive **dashboard** for:  
   - Engagement quality insights  
@@ -94,27 +114,27 @@ We designed an **end-to-end pipeline** consisting of five main modules:
 <p align="center">
   <img src="images/home_kpi.png" alt="Dashboard Homepage" width="600">
 </p>
-**Figure 1:** Homepage of Dashboard displaying Quality Comments Ratio  
+**Figure 2:** Homepage of Dashboard displaying Quality Comments Ratio  
 
 <p align="center">
   <img src="images/home_cmtQuality.png" alt="Dashboard Homepage" width="600">
 </p>
-**Figure 2:** Homepage of Dashboard displaying Relevant Comment Score & Top Quality Comments  
+**Figure 3:** Homepage of Dashboard displaying Relevant Comment Score & Top Quality Comments  
 
 <p align="center">
   <img src="images/home_sentiment.png" alt="Dashboard Homepage" width="600">
 </p>
-**Figure 3:** Homepage of Dashboard displaying Sentiment & Category Analysis  
+**Figure 4:** Homepage of Dashboard displaying Sentiment & Category Analysis  
 
 <p align="center">
   <img src="images/home_spam.png" alt="Dashboard Homepage" width="600">
 </p>
-**Figure 4:** Homepage of Dashboard displaying Spam Filter  
+**Figure 5:** Homepage of Dashboard displaying Spam Filter  
 
 <p align="center">
   <img src="images/home_roi.png" alt="Dashboard Homepage" width="600">
 </p>
-**Figure 5:** Homepage of Dashboard displaying Impact and ROI  
+**Figure 6:** Homepage of Dashboard displaying Impact and ROI  
 
 ---
 
