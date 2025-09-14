@@ -5,7 +5,7 @@
 # Installation
 1. Clone the repository to local machine:
 ```
-https://github.com/dingxing03/CommentSense
+https://github.com/dingxing03/CommentSense.git
 ```
 
 2. Install the 'requirements.txt' for backend:
